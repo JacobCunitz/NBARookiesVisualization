@@ -1,0 +1,47 @@
+<!--
+rankings.html
+Jacob Cunitz (z1929689)
+CSCI 490 - 00N9
+Professor - Dr. Maoyuan Sun
+-->
+
+<!DOCTYPE html>
+
+<head>
+
+    <p>
+        Jacob Cunitz - Project 2 Part 2
+
+        <a href="index.html">
+            <button>Click to Return Back to Main Visualizations</button>
+        </a>
+    </p>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+
+    <style>
+        .container {
+            text-align: left;
+        }
+        .vis {
+            display: inline-block;
+            width: 390px;
+            height: 350px;
+            border: 2px solid rgb(0, 0, 0);   
+            vertical-align: top; 
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="vis" id="defensive"></div>
+        <div class="vis" id="offensive"></div>
+        <div class="vis" id="overall"></div>
+    </div>  
+
+</body>
+
+<script type="text/javascript" src="final_rankings/defensive_rankings.js"></script>
+<script type="text/javascript" src="final_rankings/offensive_rankings.js"></script>
+<script type="text/javascript" src="final_rankings/overall_rankings.js"></script>

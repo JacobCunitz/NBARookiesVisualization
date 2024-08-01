@@ -1,0 +1,62 @@
+<!--
+index.html
+Jacob Cunitz (z1929689)
+CSCI 490 - 00N9
+Professor - Dr. Maoyuan Sun
+-->
+
+<!DOCTYPE html>
+
+<head>
+
+    <p>
+        Jacob Cunitz - Project 2 Part 2  &nbsp;&nbsp;&nbsp; Effeciency Rating Formula (EFF) - (PTS + REB + AST + STL + BLK - Missed FG - Missed FT - TO) / GP
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    
+        <a href="rankings.html">
+            <button>Click to View Final Ranks</button>
+        </a>
+
+    </p>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+
+    <!--Make page a little larger-->
+    <style>
+        .container {
+            text-align: left;
+        }
+        .vis {
+            display: inline-block;
+            width: 400px;
+            height: 350px;
+            border: 2px solid rgb(0, 0, 0);   
+            vertical-align: top; 
+        }
+        .defensevis {
+            display: inline-block;
+            width: 383px;
+            height: 350px;
+            border: 2px solid rgb(0, 0, 0); 
+        }
+        .extended {
+            display: inline-block;
+            width: 1200px;
+            height: 350px;
+            border: 2px solid rgb(0, 0, 0);
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="defensevis" id="defense_vis"></div>
+        <div class="vis" id="offense_vis"></div>
+        <div class="vis" id="effeciency_vis"></div>
+        <div class="extended" id="passing_vis"></div>
+    </div>  
+</body>
+
+<script type="text/javascript" src="main_visualizations/defense.js"></script>
+<script type="text/javascript" src="main_visualizations/offense.js"></script>
+<script type="text/javascript" src="main_visualizations/passing.js"></script>
+<script type="text/javascript" src="main_visualizations/effeciency.js"></script>
